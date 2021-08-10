@@ -57,7 +57,8 @@ sourcetype=linux_audit
 
 - Enter the following and edit the targetUri as the deployment server IP/FQDN and set the port to 8089.
 
-```[deployment-client]
+```
+[deployment-client]
 # 10 minutes
 # phoneHomeIntervalInSecs = 600
 
