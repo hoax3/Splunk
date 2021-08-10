@@ -1,6 +1,6 @@
-###Linux Installation Playbook – SUSE Linux
+# Linux Installation Playbook – SUSE Linux
 
-# Splunk Search Head Prep
+## Splunk Search Head Prep
 
 - Create an index for linux events (if not created already)
 
@@ -8,7 +8,7 @@
 
 - Install the Splunk Linux Add-on https://splunkbase.splunk.com/app/833/
 
-#Splunk Deployment Server Prep
+## Splunk Deployment Server Prep
 
 - Create a Server Class for Linux hosts (if not created already)
 
@@ -29,11 +29,8 @@
 - Enter monitoring Stanzas, the Splunk_TA_nix default/inputs.conf contains example monitoring inputs. For basic security monitoring, reference the input stanza below:
 
 ```[monitoring:///var/log/audit]
-
 disabled=false
-
 index=linux
-
 sourcetype=linux_audit
 ```
 
@@ -41,7 +38,7 @@ sourcetype=linux_audit
 
 > Deployment Server > Settings > Forwarder Management > Server Classes > Add Apps > Make sure to set the App action to restart Splunkd
 
-# Linux Host Prep as Deployment Client
+## Linux Host Prep as Deployment Client
 
 - Download Splunk Universal Forwarder – Select the .rpm file for SUSE https://www.splunk.com/en_us/download/universal-forwarder.html
 
@@ -60,15 +57,11 @@ sourcetype=linux_audit
 - Enter the following and edit the targetUri as the deployment server IP/FQDN and set the port to 8089.
 
 ```[deployment-client]
-
 # 10 minutes
-
 # phoneHomeIntervalInSecs = 600
 
 [target-broker:deploymentServer]
-
 # Change the targetUri
-
 targetUri = deploymentserver.splunk.mycompany.com:8089
 ```
 - Validate the host appears as a client within the Forwarder Management page on the Deployment Server.
