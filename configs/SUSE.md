@@ -28,7 +28,8 @@
 
 - Enter monitoring Stanzas, the Splunk_TA_nix default/inputs.conf contains example monitoring inputs. For basic security monitoring, reference the input stanza below:
 
-```[monitoring:///var/log/audit]
+```
+[monitoring:///var/log/audit]
 disabled=false
 index=linux
 sourcetype=linux_audit
