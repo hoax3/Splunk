@@ -66,6 +66,6 @@ sourcetype=linux_audit
 # Change the targetUri
 targetUri = deploymentserver.splunk.mycompany.com:8089
 ```
-- Validate the host appears as a client within the Forwarder Management page on the Deployment Server.
+- Validate the host appears as a client within the Forwarder Management page on the DS
 
 > Deployment Server > Settings > Forwarder Management > Clients 
