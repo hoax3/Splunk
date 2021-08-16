@@ -53,7 +53,7 @@ sourcetype=linux_audit
 
 - Set the deployment client configuration file https://docs.splunk.com/Documentation/Splunk/8.2.1/Admin/Deploymentclientconf
 
-`vi /opt/splunk/etc/system/deploymentclient.conf`
+`vi /opt/splunk/etc/system/local/deploymentclient.conf`
 
 - Enter the following and edit the targetUri as the deployment server IP/FQDN and set the port to 8089.
 
